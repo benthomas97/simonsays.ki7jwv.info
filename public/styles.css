@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arvo';
+    font-size: 16px;
+    padding: 20px 100px 0px 100px;
+    background: #ffaa00;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.signal {
+    margin: 30px auto;
+    width: 60px;
+    height: 60px;
+    
+}
+
+.button_red {
+    background-color: red;
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.button_yellow {
+    background-color: yellow;
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.button_blue {
+    background-color: blue;
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.button_green {
+    background-color: green;
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+/* List */
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #fff;
+    width: 500px;
+    min-height: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.delete {
+    display: none;
+    margin-left: auto;
+}
+
+li:hover .delete {
+    display: block;
+}
+
+label {
+    width: 400px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+/* Form */
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+input[type=text] {
+    font-size: 1em;
+}
+
+button {
+    font-family: 'Arvo';
+    font-size: 1em;
+}
+
+/* Controls */
+
+.gameControls {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.controls {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}

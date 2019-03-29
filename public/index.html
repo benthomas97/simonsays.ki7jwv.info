@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Simon - Vue Clone</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Welcome to "Simon"</h1>
+    <p>Current round: {{roundNum}}</p>
+    <p>{{myMessage}}</p>
+		
+    <div class="controls">
+    	<input v-model="name" />
+		  <button v-on:click="newGame()">New Game</button>
+      <button v-on:click="displayRules()">Rules</button>
+    </div>
+
+
+    <div class="signal" v-bind:style="{backgroundColor: currentSignal}">
+    </div>
+
+    <div class="gameControls">
+      <button class="button_red" v-on:click="addColor('red')"></button>
+      <button class="button_yellow" v-on:click="addColor('yellow')"></button>
+      <button class="button_blue" v-on:click="addColor('blue')"></button>
+      <button class="button_green" v-on:click="addColor('green')"></button>
+    </div>
+		<p></p>
+		<section class="scoreboard">
+			<h2>High scores:</h2>
+			<div class="score" v-for="entry in scores">
+      	{{entry.score}} - {{entry.name}}
+    	</div>
+		</section>
+  </div>
+
+  <p>Source can be found at: <a href="https://github.com/benthomas97/cp3.ki7jwv.info">https://github.com/benthomas97/cp3.ki7jwv.info</a></p>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>

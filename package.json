@@ -1,0 +1,19 @@
+{
+  "name": "simon-clone",
+  "version": "1.0.0",
+  "description": "A clone of \"Simon Says\", now with a scoreboard powered by Mongo",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benthomas97/cp3.ki7jwv.info.git"
+  },
+  "author": "Benjamin Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benthomas97/cp3.ki7jwv.info/issues"
+  },
+  "homepage": "https://github.com/benthomas97/cp3.ki7jwv.info#readme"
+}
